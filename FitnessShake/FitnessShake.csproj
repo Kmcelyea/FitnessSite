@@ -227,6 +227,8 @@
     <Content Include="fonts\adelle\adelle-extrabold-webfont.woff2" />
     <Content Include="fonts\adelle\adelle-light-webfont.woff2" />
     <Content Include="fonts\adelle\adelle-reg-webfont.woff2" />
+    <None Include="Properties\PublishProfiles\FitnessShake - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\FitnessShake - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

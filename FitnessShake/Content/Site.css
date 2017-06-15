@@ -1,0 +1,241 @@
+﻿body {
+    font-family: Adelle !important;
+    font-size:18px;
+    font-size:1em;
+    font-weight: 300;
+    color: #ffffff !important;
+    line-height: 115px;
+    line-height: 7.1875rem;
+}
+
+.header{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    margin-bottom:25px;
+}
+.header .row {
+    
+}
+
+.padder {
+        padding: 0 40px;
+}
+
+.header-backdrop{
+        content: '';
+    display: none;
+    position: fixed;
+    background-color: #ff3800;
+    z-index: 1;
+}
+
+.companyLogo { 
+    float: left;
+    display: inline-block;
+    width: 210px;
+    height: 64px;
+    position: relative;
+    z-index: 2;
+    pointer-events: all;
+}
+
+.companyLogo a {
+    color: #007090;
+    text-decoration:none;
+}
+
+.companyLogo a.is-active, .companyLogo a:hover {
+    color:#01A7C2;
+    text-decoration:none;
+}
+
+.brandName {
+    font-size:3em;
+    font-weight:800;
+    color:#007090;
+    margin-left:50px;
+}
+
+.breakMark {
+    font-size:3em;
+    font-weight:800;
+    color:#007090;
+    float:right;
+}
+
+.navList{
+    display: block;
+    position: static;
+    /*float: right;*/
+    opacity: 1;
+    width: auto;
+    padding-top: 0;
+    background-color: transparent;
+    pointer-events: all;
+    margin-right:50px;
+    margin-top: 20px;
+}
+
+.navList ul {
+    list-style-type: none;
+    position: relative;
+    z-index: 10;
+    padding-left: 0;
+   
+}
+
+.navList li {
+    display: inline-block;
+    margin-left: 35px;
+    margin-bottom: 0;
+}
+
+.navList li a {
+    font-family: Adelle !important;
+    font-weight:400;
+    color: #007090;
+    font-size: 24px;
+    font-size: 3em;
+    line-height: 38px;
+    line-height: 2.375rem;
+    text-decoration:none;
+}
+
+.navList a.is-active, .navList a:hover {
+    color: #01A7C2;
+    text-decoration:none;
+}
+
+.mainContent {
+    margin-top: 65px;
+}
+
+.mainContainer {
+    min-height: 300px;
+    height: 100%;
+}
+
+.contentContainer {
+    margin-bottom: 10px;
+}
+
+h1{
+    font-family: Adelle !important;
+    font-size:88px !important;
+    font-size: 6.25em !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin-left: 10px !important;
+    letter-spacing: -.01em !important;
+}
+
+h2 {
+    font-family: Adelle !important;
+    font-size:55px !important;
+    font-size: 4em !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin-left: 10px !important;
+    letter-spacing: -.01em !important;
+}
+
+h3 {
+    font-family: Adelle !important;
+    font-size:45px !important;
+    font-size: 2em !important;
+    font-weight: 400 !important;
+    color: #ffffff !important;
+    margin-left: 10px !important;
+    letter-spacing: -.01em !important;
+}
+
+p {
+    font-family: Adelle !important;
+    font-size:18px !important;
+    font-size: 1.1em !important;
+    font-weight: 400 !important;
+    margin-left: 5px!important;
+    margin-right: 5px !important;
+    margin-bottom: 1px !important;
+    margin-top: 1px !important;
+}
+
+.slideStyle {
+    width: auto;
+    height: 100px;
+}
+
+.sliderImage{
+    height: 64px;
+    width: 64px;
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 5px;
+    margin-left: 50px;
+}
+
+
+.lighterColor {
+    background-color: #A3BAC3 !important;
+    color: #000000;
+}
+
+.lightColor {
+    background-color: #EAEBED !important;
+    color: #000000;
+}
+
+.primaryColor {
+    background-color: #007090 !important;
+}
+
+.primaryColor2 {
+    background-color: #01A7C2 !important;
+}
+
+.primaryColor3 {
+    background-color: #006989 !important;
+}
+
+.brandImage300 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+@font-face {
+    font-family: Adelle;
+    font-weight: 300;
+    font-style: normal;
+    src: url(../fonts/adelle/adelle-light-webfont.eot);
+    src: url(../fonts/adelle/adelle-light-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/adelle/adelle-light-webfont.woff2) format("woff2"),url(../fonts/adelle/adelle-light-webfont.woff) format("woff"),url(../fonts/adelle/adelle-light-webfont.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Adelle;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/adelle/adelle-reg-webfont.eot);
+    src: url(../fonts/adelle/adelle-reg-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/adelle/adelle-reg-webfont.woff2) format("woff2"),url(../fonts/adelle/adelle-reg-webfont.woff) format("woff"),url(../fonts/adelle/adelle-reg-webfont.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Adelle;
+    font-weight: 700;
+    font-style: normal;
+    src: url(../fonts/adelle/adelle-bold-webfont.eot);
+    src: url(../fonts/adelle/adelle-bold-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/adelle/adelle-bold-webfont.woff2) format("woff2"),url(../fonts/adelle/adelle-bold-webfont.woff) format("woff"),url(../fonts/adelle/adelle-bold-webfont.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Adelle;
+    font-weight: 800;
+    font-style: normal;
+    src: url(../fonts/adelle/adelle-extrabold-webfont.eot);
+    src: url(../fonts/adelle/adelle-extrabold-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/adelle/adelle-extrabold-webfont.woff2) format("woff2"),url(../fonts/adelle/adelle-extrabold-webfont.woff) format("woff"),url(../fonts/adelle/adelle-extrabold-webfont.ttf) format("truetype");
+}

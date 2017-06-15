@@ -32,10 +32,10 @@ var configFunction = function ($stateProvider, $httpProvider, $locationProvider)
             url: '/stateTwo',
             views: {
                 "containerOne": {
-                    templateUrl: '/test/one'
+                    templateUrl: '/test/two'
                 },
                 "containerTwo": {
-                    templateUrl: '/test/three'
+                    templateUrl: '/test/one'
                 },
                 "sliceOne": {
                     templateUrl: '/slider/one'
@@ -49,10 +49,13 @@ var configFunction = function ($stateProvider, $httpProvider, $locationProvider)
             url: '/stateThree',
             views: {
                 "containerOne": {
-                    templateUrl: '/test/two'
+                    templateUrl: '/test/three'
                 },
                 "containerTwo": {
-                    templateUrl: '/test/three'
+                    templateUrl: '/test/one'
+                },
+                "nestedView@stateThree": {
+                    templateUrl: '/test/four'
                 },
                 "sliceOne": {
                     templateUrl: '/slider/one'

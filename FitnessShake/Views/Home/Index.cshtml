@@ -5,51 +5,44 @@
     @Styles.Render("~/Content/css")
 </head>
 <body>
-    <div class="header yellowColor">
-        <div class="header-backdrop"></div>
-        <div class="row">
-            <div class="col-md-2 companyLogo">
-                <a href="#" class="brandName">Brand </a>
-                <div class="breakMark"> | </div>
-            </div>
-            <div class="col-md-10">
-                
-                <ul class="navList">
-                    <li><a ui-sref="stateOne">One</a></li>
-                    <li><a ui-sref="stateTwo">Two</a></li>
-                    <li><a ui-sref="stateThree">Three</a></li>
-                </ul>
-            </div>
+<div class="container">
+<div class="header">
+        <div class="companyLogo">
+            <img src="/Content/Images/logo2.png" class="logo"/> Creature Tumblers
+        </div>
+        <div class="col-md-12">
+            <ul class="navList">
+                <li><a ui-sref="stateOne">One</a></li>
+                <li><a ui-sref="stateTwo">Two</a></li>
+                <li><a ui-sref="stateThree">Three</a></li>
+            </ul>
+        </div>
+</div>
+<div class="mainContent">
+    <div class="row">
+        <div class="col-md-12 mainContainer" ng-class="{'bg1': models.coc === 1 ,'bg2': models.coc === 2 ,'bg3': models.coc === 3 ,'bg4': models.coc === 4 }">
+            <div ui-view="containerOne"></div>
         </div>
     </div>
-    <div class="mainContent">
-        <div class="row">
-            <div class="col-md-12 mainContainer primaryColor">
-                <div ui-view="containerOne" ></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div ui-view="sliceOne" class="slideStyle lightColor"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 mainContainer primaryColor2">
-                <div ui-view="containerTwo"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div ui-view="sliceTwo" class="slideStyle lighterColor"></div>
-            </div>
+    <div class="row">
+         <div ui-view="sliceOne" class="slideStyle"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mainContainer" ng-class="{'bg1': models.ctc === 1 ,'bg2': models.ctc === 2 ,'bg3': models.ctc === 3 ,'bg4': models.ctc === 4 }">
+            <div ui-view="containerTwo"></div>
         </div>
     </div>
+    <div class="row">
+        <div ui-view="sliceTwo" class="slideStyle"></div>
+    </div>
+</div>
+</div>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
-    @Scripts.Render("~/bundles/Application")
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+@Scripts.Render("~/bundles/Application")
 </body>
 </html>
 

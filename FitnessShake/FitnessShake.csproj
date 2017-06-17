@@ -204,10 +204,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Images\energy-drink.svg" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\logo2.png" />
     <Content Include="Content\Images\muscle.svg" />
     <Content Include="Content\Images\placeholder.png" />
     <Content Include="Content\Images\protein.svg" />
     <Content Include="Content\Images\pulse.svg" />
+    <Content Include="Content\Images\squid.jpg" />
     <Content Include="Content\Images\trainer.svg" />
     <Content Include="Content\Images\winner.svg" />
     <Content Include="Content\Site.css" />

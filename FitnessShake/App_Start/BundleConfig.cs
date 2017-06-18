@@ -15,6 +15,7 @@ namespace FitnessShake
                        "~/Content/bootstrap.scss"));
             bundles.Add(new ScriptBundle("~/bundles/Application")
             .IncludeDirectory("~/Scripts/App/Controllers", "*.js")
+            .IncludeDirectory("~/Scripts/App/Factories", "*.js")
             .Include("~/Scripts/App/Application.js"));
 
 

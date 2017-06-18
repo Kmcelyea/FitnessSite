@@ -6,14 +6,12 @@ using System.Web.Mvc;
 
 namespace FitnessShake.Controllers
 {
-    public class SliderController : Controller
+    [Authorize]
+    public class SiteController : Controller
     {
-        public ActionResult One()
-        {
-            return View();
-        }
-
-        public ActionResult Two()
+        // GET: Site
+        [Authorize]
+        public ActionResult Index()
         {
             return View();
         }

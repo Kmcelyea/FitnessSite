@@ -14,42 +14,24 @@ namespace FitnessShake
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "routeOne",
-                url: "test/One",
-                defaults: new { controller = "Test", action = "One" });
+                name: "landing",
+                url: "home/landing",
+                defaults: new { controller = "Home", action = "Landing" });
 
             routes.MapRoute(
-                name: "routeTwo",
-                url: "test/Two/",
-                defaults: new { controller = "Test", action = "Two" });
-
-            //routes.MapRoute(
-            //    name: "routeTwo",
-            //    url: "routesDemo/Two/{donuts}",
-            //    defaults: new { controller = "RoutesDemo", action = "Two", donuts = UrlParameter.Optional });
+                name: "site",
+                url: "site/index/",
+                defaults: new { controller = "Site", action = "Index" });
 
             routes.MapRoute(
-                name: "routeThree",
-                url: "test/Three",
-                defaults: new { controller = "Test", action = "Three" });
+                name: "login",
+                url: "Account/Login",
+                defaults: new { controller = "Account", action = "Login" });
 
             routes.MapRoute(
-                name: "routeFour",
-                url: "test/Four",
-                defaults: new { controller = "Test", action = "Four" });
-
-            routes.MapRoute(
-                name: "sliderOne",
-                url: "slider/One",
-                defaults: new { controller = "Slider", action = "One" });
-
-
-            routes.MapRoute(
-                name: "sliderTwo",
-                url: "slider/Two",
-                defaults: new { controller = "Slider", action = "Two" });
-
-
+                name: "register",
+                url: "Account/Register",
+                defaults: new { controller = "Account", action = "Register" });
 
             routes.MapRoute(
                 name: "Default",
@@ -58,3 +40,9 @@ namespace FitnessShake
         }
     }
 }
+
+
+//routes.MapRoute(
+//    name: "routeTwo",
+//    url: "routesDemo/Two/{donuts}",
+//    defaults: new { controller = "RoutesDemo", action = "Two", donuts = UrlParameter.Optional });

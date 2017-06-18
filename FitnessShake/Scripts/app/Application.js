@@ -1,70 +1,51 @@
 ﻿var Application = angular.module('Application', ['ui.router', 'ui.bootstrap']);
 
 Application.controller('LandingPageController', LandingPageController);
+Application.controller('SiteController', SiteController);
+Application.controller('LoginController', LoginController);
+Application.controller('RegisterController', RegisterController);
 
+
+Application.factory('AuthHttpResponseInterceptor', AuthHttpResponseInterceptor);
+Application.factory('LoginFactory', LoginFactory);
+Application.factory('RegistrationFactory', RegistrationFactory);
 
 var configFunction = function ($stateProvider, $httpProvider, $locationProvider) {
 
     $locationProvider.hashPrefix('!').html5Mode(true);
 
     $stateProvider
-        .state('stateOne', {
-            url: '/stateOne',
+        .state('landing', {
+            url: '/landing',
             views: {
-                "containerOne": {
-                    templateUrl: '/test/one'
-                },
-                "containerTwo": {
-                    templateUrl: '/test/two'
-                },
-                "sliceOne":{
-                    templateUrl: '/slider/one'
-                },
-                "sliceTwo": {
-                    templateUrl: '/slider/two'
-                },
-                "nestedView@stateOne": {
-                    templateUrl: '/test/four'
+                "main": {
+                    templateUrl: '/home/landing'
                 }
             }
         })
-        .state('stateTwo', {
-            url: '/stateTwo',
+        .state('site', {
+            url: '/site',
             views: {
-                "containerOne": {
-                    templateUrl: '/test/two'
-                },
-                "containerTwo": {
-                    templateUrl: '/test/one'
-                },
-                "sliceOne": {
-                    templateUrl: '/slider/one'
-                },
-                "sliceTwo": {
-                    templateUrl: '/slider/two'
-                },
+                "main": {
+                    templateUrl: '/site/index'
+                }
             }
         })
-        .state('stateThree', {
-            url: '/stateThree',
+        .state('loginRegister', {
+            url: '/loginRegister?returnUrl',
             views: {
                 "containerOne": {
-                    templateUrl: '/test/three'
+                    templateUrl: '/Account/Login',
+                    controller: LoginController
                 },
                 "containerTwo": {
-                    templateUrl: '/test/one'
-                },
-                "nestedView@stateThree": {
-                    templateUrl: '/test/four'
-                },
-                "sliceOne": {
-                    templateUrl: '/slider/one'
-                },
-                "sliceTwo": {
-                    templateUrl: '/slider/two'
-                },
+                    templateUrl: '/Account/Register',
+                    controller: RegisterController
+                }
             }
         });
+
+    $httpProvider.interceptors.push('AuthHttpResponseInterceptor');
 }
 configFunction.$inject = ['$stateProvider', '$httpProvider', '$locationProvider'];
 

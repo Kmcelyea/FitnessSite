@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace FitnessShake.Models
+namespace FitnessShake.Data.Models
 {
     // Models returned by AccountController actions.
     public class ExternalLoginConfirmationViewModel

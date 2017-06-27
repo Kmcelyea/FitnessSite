@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
-namespace FitnessShake.Models
+namespace FitnessShake.Data.Models
 {
     public class IndexViewModel
     {

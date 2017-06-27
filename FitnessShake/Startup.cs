@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Owin;
-using Owin;
-
-[assembly: OwinStartup(typeof(FitnessShake.Startup))]
-
-namespace FitnessShake
+﻿namespace FitnessShake
 {
-    public partial class Startup
+    public class Startup
     {
-        public void Configuration(IAppBuilder app)
+        public void Configuration()
         {
             
         }
